@@ -1,0 +1,318 @@
+/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 56px 0 0 0;
+    background-color: black;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    gap: 50px;
+    background-color: black;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-link {
+    padding: 0 20px;
+    margin-right: 20px;
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Header */
+.header {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/computadora.jpg) center/cover no-repeat fixed;
+}
+
+.header-content {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.header-subtitle {
+    font-weight: 200;
+    font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.header-title {
+    font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+    line-height: .7;
+    margin-bottom: 25px;
+}
+
+.header-mono {
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 40px;
+}
+
+/* Sección Acerca de mí */
+#acerca-de-mi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black; /* Fondo negro para el efecto */
+    color: white; /* Texto en blanco */
+}
+
+.acerca-de-mi-texto {
+    flex: 1;
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+#acerca-de-mi h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#acerca-de-mi p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+.acerca-de-mi-imagen {
+    flex: 1;
+    
+}
+
+.acerca-de-mi-imagen img {
+    margin-left: 25%;
+    width: 70%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover; /* Asegura que la imagen se mantenga bien dentro del contenedor */
+}
+
+/* Tarjetas */
+.card {
+    margin-left: 20%;
+    background-color: black;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.card-header {
+    background-color: black;
+    border-bottom: 2px solid gray;
+    border-radius: 8px 8px 0 0;
+    padding: 10px 15px; 
+}
+
+.card-body {
+    background-color: black;
+    padding: 15px;
+}
+
+
+/* Progreso */
+.progress {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    line-height: 20px;
+    background-color: rgb(50, 69, 178) !important;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    
+   
+}
+
+/* Secciones */
+.content-section {
+    padding: 0;
+    /* flex: 0 1 calc(50% - 20px);  */
+    margin: 0 10px;
+    flex: 1; /* Asegura que cada sección ocupe igual espacio */
+    min-width: 0; /* Previene problemas de overflow */
+
+}
+
+/* Añadir esto al CSS */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 10px;
+}
+
+/* Estudios, Contacto y Otros */
+#studies, #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .card-estudios {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+} */
+
+.text-large {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+.text-muted {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+}
+
+/* Portfolio */
+
+.card-portfolio {
+    background-color: black;
+    border-bottom: 3px solid gray;
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.portfolio {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio .filters {
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 4px;
+    margin: 0 auto 20px;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio .filters a {
+    flex-grow: 1;
+    color: #212529;
+    font-size: 13px;
+    font-weight: 200;
+    opacity: 0.7;
+    padding: 4px 10px;
+    transition: 0.3s;
+}
+
+.portfolio .filters a.active {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.7);
+    color: #fff;
+}
+
+.portfolio .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio .portfolio-item {
+    position: relative;
+    width: calc(40% - 10px);
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.portfolio .portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio .content-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(90, 88, 88, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f2eeee;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.portfolio .portfolio-item:hover .content-holder {
+    opacity: 1;
+    visibility: visible;
+}
+
+.link-ricco {
+    color: #f2eeee; /* Color por defecto */
+    text-decoration: none; /* Remueve subrayado, si lo deseas */
+}
+
+.link-ricco:hover {
+    color: rgb(9, 9, 9); /* Color al pasar el ratón */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 0.9rem;
+    }
+
+    .card-header {
+        padding: 8px 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .progress {
+        height: 15px;
+    }
+
+    .progress-bar {
+        font-size: 0.75rem;
+    }
+}
+
+/* Spacing between cards on smaller screens */
+@media (max-width: 575.98px) {
+    .content-section {
+        margin-bottom: 1.5rem;
+    }
+}
