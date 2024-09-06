@@ -72,13 +72,13 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: black; /* Fondo negro para el efecto */
-    color: white; /* Texto en blanco */
+    background-color: black; 
+    color: white; 
 }
 
 .acerca-de-mi-texto {
     flex: 1;
-    margin-right: 20px; /* Espacio entre el texto y la imagen */
+    margin-right: 20px; 
 }
 
 #acerca-de-mi h2 {
@@ -98,11 +98,11 @@ body {
 
 .acerca-de-mi-imagen img {
     margin-left: 25%;
-    width: 70%; /* Ajusta el tamaño de la imagen */
+    width: 50%; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
-    object-fit: cover; /* Asegura que la imagen se mantenga bien dentro del contenedor */
+    object-fit: cover; 
 }
 
 /* Tarjetas */
@@ -151,10 +151,9 @@ body {
 /* Secciones */
 .content-section {
     padding: 0;
-    /* flex: 0 1 calc(50% - 20px);  */
     margin: 0 10px;
-    flex: 1; /* Asegura que cada sección ocupe igual espacio */
-    min-width: 0; /* Previene problemas de overflow */
+    flex: 1; 
+    min-width: 0; 
 
 }
 
@@ -174,11 +173,6 @@ body {
     height: 100vh;
 }
 
-/* .card-estudios {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px;
-} */
 
 .text-large {
     font-size: 1em;
@@ -274,45 +268,60 @@ body {
 }
 
 .link-ricco {
-    color: #f2eeee; /* Color por defecto */
-    text-decoration: none; /* Remueve subrayado, si lo deseas */
+    color: #f2eeee; 
+    text-decoration: none; 
 }
 
 .link-ricco:hover {
-    color: rgb(9, 9, 9); /* Color al pasar el ratón */
+    color: rgb(9, 9, 9); 
 }
 
 
-/* Responsive Adjustments */
-@media (max-width: 767.98px) {
-    h4 {
-        font-size: 1.25rem;
+/* Media Query para pantallas medias */
+@media (max-width: 769px) {
+    /* Ajustes para dispositivos móviles */
+    body {
+        padding: 20px 0 0 0;
     }
 
-    h6 {
-        font-size: 0.9rem;
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .card-header {
-        padding: 8px 10px;
+    .header {
+        height: 50vh;
+        min-height: 300px;
     }
 
-    .card-body {
-        padding: 10px;
+    .header-subtitle,
+    .header-title,
+    .header-mono {
+        font-size: 1em;
     }
 
-    .progress {
-        height: 15px;
+    #acerca-de-mi {
+        flex-direction: column;
     }
 
-    .progress-bar {
-        font-size: 0.75rem;
+    .acerca-de-mi-imagen img {
+        margin-left: 0;
+        width: 100%;
     }
-}
 
-/* Spacing between cards on smaller screens */
-@media (max-width: 575.98px) {
+        .card {
+        margin: 0 auto;
+        width: 90%;
+        max-width: none;
+    }
+
+    .portfolio .portfolio-item {
+        width: calc(100% - 30px);
+    }
+
     .content-section {
-        margin-bottom: 1.5rem;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
     }
+
 }
