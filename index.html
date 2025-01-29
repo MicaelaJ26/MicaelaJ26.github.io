@@ -9,27 +9,30 @@
     <link rel="stylesheet" href="style.css">
     <!-- Iconos Boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Iconos Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
     <title>My Portfolio</title>
 </head>
 <body>
     <!-- Navegación -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-black">
-        <div class="container-fluid">          
+        <div class="container-fluid">
           <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> 
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#"onclick="showSection('home')"> Home </a>
+              <a class="nav-link" href="#" onclick="showSection('home')"> Home </a>
               <a class="nav-link" href="#aboutme" onclick="showSection('acerca-de-mi')"> About me </a>
               <a class="nav-link" href="#skills" onclick="showSection('Sofware Skills')"> Skills </a>
               <a class="nav-link" href="#studies" onclick="showSection('estudios')"> Studies </a>
-              <a class="nav-link" href="#myprojects" onclick="showSection('misproyectos')"> My Projects </a> 
+              <a class="nav-link" href="#myprojects" onclick="showSection('misproyectos')"> My Projects </a>
               <a class="nav-link" href="#contact" onclick="showSection('contacto')"> Contact </a>
             </div>
           </div>
         </div>
-      </nav>  
+      </nav>
 
     <!-- Encabezado -->
     <header id="home" class="header">
@@ -43,6 +46,9 @@
     <!-- Sección Acerca de mí -->
     <section id="aboutme"  class="d-flex" class="content-section spacing">
         <div class="row">
+        <div class="acerca-de-mi-imagen" class="col-md-6">
+            <img src="./img/Micaela.jpg" alt="Foto de Micaela Juarez" class="img-fluid rounded">
+        </div>
         <div class="col-md-6">
             <div class="card-acerca-de-mi-texto">
                <div class="card-header text-center">
@@ -51,166 +57,157 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <p>I am a professional with more than eight years of experience in the legal field, currently transitioning towards Full Stack development. During this process, I have acquired and refined technical skills in HTML, CSS, JavaScript, Angular, Node.js, Django and MySQL. With strong problem-solving skills and a proactive approach to continuous learning, I am excited to contribute to innovative projects in dynamic environments.</p>
-                    <p>My professional experience has given me tenacity and resilience, qualities that I apply to the world of Full Stack development. Although my career in programming is recent, I am characterized by a rapid adaptation to new technologies and a vision oriented to the future. I am committed to continuing to develop my skills to provide significant value in the technological field.</p>
+                    <p>I am a Full Stack Developer with experience in web and mobile application development. I am passionate about creating scalable and easy-to-use solutions. For more than 8 years, I worked in the legal field, where I developed key skills like project management, problem-solving, and teamwork.</p>
+                    <p>In my transition to tech, I have learned skills in HTML, CSS, JavaScript, TypeScript, Java, Python, and frameworks like Angular, Django, Node.js, React Native, and MySQL. I have a Full Stack Development certification and a technical degree in Web and Digital Applications Development, which help me quickly adapt to new technologies and dynamic environments.</p>
+                    <p>I am known for resilience, continuous learning, and a future-oriented mindset. I am committed to growing professionally and contributing innovative solutions in teams that value creativity and collaborative development.</p>
                 </div>
             </div>
         </div>
-        <div class="acerca-de-mi-imagen" class="col-md-6">
-            <img src="./img/Micaela.jpg" alt="Foto de Micaela Juarez" class="img-fluid rounded">
+        
+    </div>
+</section>
+
+<!-- Sección Skills Software -->
+<section class="section bg-custom-gray" id="skills" class="content-section spacing">
+    <div class="skills-container">        
+        <h2 class="skills-title">Skills Software</h2>    
+        <div class="skills-grid">
+            <div class="icon-card"><i class="devicon-html5-plain icon custom-white"></i><p>HTML5</p></div>
+            <div class="icon-card"><i class="devicon-css3-plain icon custom-white"></i><p>CSS3</p></div>
+            <div class="icon-card"><i class="devicon-javascript-plain icon custom-white"></i><p>JavaScript</p></div>
+            <div class="icon-card"><i class="devicon-typescript-plain icon custom-white"></i><p>TypeScript</p></div>    
+            <div class="icon-card"><i class="devicon-java-plain icon custom-white"></i><p>Java (Frontend)</p></div>
+            <div class="icon-card"><i class="devicon-python-plain icon custom-white"></i><p>Python</p></div>
+            <div class="icon-card"><i class="devicon-angularjs-plain icon custom-white"></i><p>Angular 17</p></div>
+            <div class="icon-card"><i class="devicon-django-plain icon custom-white"></i><p>Django</p></div>    
+            <div class="icon-card"><i class="devicon-react-original icon custom-white"></i><p>React Native</p></div>
+            <div class="icon-card"><i class="devicon-bootstrap-plain icon custom-white"></i><p>Bootstrap</p></div>
+            <div class="icon-card"><i class="devicon-nodejs-plain icon custom-white"></i><p>Node.js</p></div>
+            <div class="icon-card"><i class="devicon-mysql-plain icon custom-white"></i><p>MySQL</p></div>    
+            <div class="icon-card"><i class="devicon-sqlite-plain icon custom-white"></i><p>SQL</p></div>
+            <div class="icon-card"><i class="devicon-git-plain icon custom-white"></i><p>Git</p></div>
+            <div class="icon-card"><i class="devicon-github-original icon custom-white"></i><p>GitHub</p></div>
+            <div class="icon-card"><i class="devicon-postman-plain icon custom-white"></i><p>Postman</p></div>    
+            <div class="icon-card"><i class="devicon-vscode-plain icon custom-white"></i><p>VS Code</p></div>
+            <div class="icon-card"><i class="devicon-androidstudio-plain icon custom-white"></i><p>Android Studio</p></div>
+            <div class="icon-card"><i class="devicon-wordpress-plain icon custom-white"></i><p>WordPress</p></div>
+        </div>
+    </div>
+    </div>
         </div>
     </div>
 </section>
 
-
-<div class="container-fluid p-0">
-    <div class="row">
-        <!-- Sección Software Skills -->
-        <section id="skills" class="content-section col-12 col-md-6 spacing mb-4">
-            <div class="card border-0 w-100">
-                <div class="card-header text-center">
-                    <h4 class="mt-2">Software Skills</h4>
-                </div>
-                <div class="card-body pb-2">
-                    <h6>HTML5 &amp; CSS</h6>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h6>JavaScript</h6>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h6>Typescript</h6>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h6>Angular</h6>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h6>MySQL</h6>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h6>Python</h6>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h6>Django</h6>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h6>Node</h6>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
+<!-- Contenedor Padre para Educación y Lenguajes -->
+<div class="education-languages container spacing">
+    <!-- Sección Educación -->
+    <section id="studies" class="content-section column">
+        <div class="card-estudios">
+            <div class="card-header text-center">
+                <h4>Education</h4>
             </div>
-        </section>
-
-       <!-- Sección Languages -->
-        <section id="Languages" class="content-section col-12 col-md-6 spacing mb-4">
-            <div class="card border-0 w-100">
-                     <div class="card-Languages">
-                        <div class="card-header text-center">
-                            <div class="mt-2">
-                            <h4>Language</h4>
-                            <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6> Spanish </h6>
-                            <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6> English </h6>
-                            <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6> Italian </h6>
-                            <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-    </div>
-</div>
-    
-<!-- Sección Estudios -->
-    <section id="studies" class="content-section spacing">
-        <div class="col-md-6 col-lg-4">
-            <div class="card-estudios">
-               <div class="card-header text-center">
-                    <div class="mt-2">
-                        <h4>Education</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="col-10 ">
+            <div class="card-body">
+                <div class="col-10">
                     <h6 class="title text-white">2023 - Present</h6>
-                    <P class="text-large"> Web Development and Digital Applications</P>
-                    <P class="subtitle text-muted">Instituto Superior Politécnico Córdoba.</P>
-                    <hr></div>
-                    <div class="col-10 ">
-                    <h6 class="title text-white">2022-2022</h6>
-                    <P class="text-large">Full Stack Development Certification</P>
-                    <P class="subtitle text-muted">Instituto Superior Politécnico Córdoba.</P>
-                    <hr></div>
+                    <p class="text-large">Web Development and Digital Applications</p>
+                    <p class="subtitle text-muted">Instituto Superior Politécnico Córdoba.</p>
+                    <hr>
+                </div>
+                <div class="col-10">
+                    <h6 class="title text-white">2022 - 2022</h6>
+                    <p class="text-large">Full Stack Development Certification</p>
+                    <p class="subtitle text-muted">Instituto Superior Politécnico Córdoba.</p>
+                    <hr>
+                </div>
+                <div class="col-10">
+                    <h6 class="title text-white">2015 - 2019</h6>
+                    <p class="text-large">Lawyer</p>
+                    <p class="subtitle text-muted">Universidad Empresarial Siglo 21.</p>
+                    <hr>
                 </div>
             </div>
         </div>
-</section>
+    </section>
+
+    <!-- Sección Lenguajes -->
+    <section id="Languages" class="content-section column">
+        <div class="card-Languages">
+            <div class="card-header text-center">
+                <h4>Languages</h4>
+            </div>
+            <div class="card-body pb-2">
+                <h6>Spanish</h6>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>English</h6>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h6>Italian</h6>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <!-- Sección Mis proyectos -->
 <section class="section bg-custom-gray" id="myprojects" class="content-section spacing">
     <div class="portfolio">
         <div class="card-portfolio text-center">
         <div class="mt-2">
-            <h4>My Proyects</h4>
+            <h4 class="portfolio-title">My Proyects</h4>
         </div>
     </div>
          <div class="portfolio-container">
             <div class="portfolio-item">
-                <img src="./img/blog2.jpg" class="img-fluid" alt="Example 1">
+                <img src="./img/riccoappnegro.png" class="img-fluid" alt="Example 1">
                 <div class="content-holder">
                     <div class="text-holder">
-                        <h6 class="title">APP WEB</h6>
-                        <!-- <p class="subtitle">Tienda de hamburgesas</p> -->
-                        <h6><a class="link-ricco" href="https://github.com/G10-ISPC/RICCO-2024">Ricco Burgers</a></h6>
+                        <h6 class="title">RiccoApp - Mobile Application</h6>
+                        <p>Mobile app for a burger chain that improves customer experience. It allows users to explore the menu and manage accounts easily. Ordering feature coming soon.</p>
+                        <!-- <a href="url-demo" class="btn demo-btn">Ver demo</a>
+                        <a href="https://github.com/G10-ISPC/RICCO-2024" class="btn github-btn">Explorar en GitHub</a> -->
                     </div>
                 </div>
-            </div>
-                
+            </div>                
             <div class="portfolio-item">
-                <img src="./img/blog3.jpg" class="img-fluid" alt="Example 2">
+                <img src="./img/quiiz2.png" class="img-fluid" alt="Example 2">
                 <div class="content-holder">
                     <div class="text-holder">
-                        <h6 class="title">LANDING PAGE</h6>
-                        <p class="subtitle">Personal Trainer, in progress</p>
+                        <h6 class="title">Interactive Quiz</h6>
+                        <p class="subtitle">Development of a quiz with dynamic navigation, state management, and a scoring system. It includes a timer and conditional logic to improve the user experience.</p>
+
+                        <!-- <a href="url-demo" class="btn demo-btn">Ver demo</a>
+                        <a href="https://github.com/G10-ISPC/RICCO-2024" class="btn github-btn">Explorar en GitHub</a> -->
                     </div>
                 </div>
-            </div>
-    
+            </div>    
             <div class="portfolio-item">
-                <img src="./img/blog3.jpg" class="img-fluid" alt="Example 3">
+                <img src="./img/riccoweb.png" class="img-fluid" alt="Example 3">
                 <div class="content-holder">
                     <div class="text-holder">
-                        <h6 class="title">APP ANDROID</h6>
-                        <h6><a class="link-ricco" href="https://github.com/G10-ISPC/Frontend-Mobile">Ricco Burgers Mobile, in progress</a></h6>
+                        <h6 class="title">Ricco Burgers - Online Store</h6>
+                        <p class="subtitle">Development of an online store for a fast-food chain, improving user experience and security.</p>
+                        
+                        <!-- <a href="url-demo" class="btn demo-btn">Ver demo</a>
+                        <a href="https://github.com/G10-ISPC/RICCO-2024" class="btn github-btn">Explorar en GitHub</a> -->
                     </div>
                 </div>
-            </div>
-    
+            </div> 
             <div class="portfolio-item">
-                <img src="./img/blog2.jpg" class="img-fluid" alt="Example 4">
+                <img src="./img/comingsoon.png" class="img-fluid" alt="Example 3">
                 <div class="content-holder">
                     <div class="text-holder">
-                        <!-- <h6 class="title">Marketing</h6>
-                        <p class="subtitle">Effective marketing strategies!</p> -->
+                        <h6 class="title">Landing Page - Personal Trainer</h6>
+                        <p class="subtitle">Design and development of a landing page for a personal trainer. Project under construction, coming soon.</p>
+                        <!-- <a href="..." class="btn demo-btn">Ver demo</a>
+                        <a href="..." class="btn github-btn">Explorar en GitHub</a> -->
                     </div>
                 </div>
-            </div>
+            </div>              
         </div>
     </div>
 </section>
@@ -246,12 +243,8 @@
     </div>
 </section>
 
-
-
-
-
-    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
-        <div class="derechos-de-autor">Micaela Ines Juarez Manescotto(2023) &#169;</div>  
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+        <div class="derechos-de-autor">Micaela Ines Juarez Manescotto(2025) &#169;</div>  
 </footer>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
@@ -267,7 +260,30 @@
         }
         // Mostrar la sección "Home" al cargar la página
         document.addEventListener('DOMContentLoaded', () => showSection('home'));
+         
+       // Cambiar idioma
+  const languageSelect = document.getElementById('languageSelect');
+  
+  languageSelect.addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value;
+
+    // Cambiar el atributo lang del HTML
+    document.documentElement.lang = selectedLanguage;
+
+    // Ejemplo de acción en base al idioma seleccionado
+    switch (selectedLanguage) {
+      case 'es':
+        alert('Idioma cambiado a Español');
+        break;
+      case 'en':
+        alert('Language switched to English');
+        break;
+      case 'it':
+        alert('Lingua cambiata in Italiano');
+        break;
+    }
+  });
           
-    </script>
+   </script>
 </body>
 </html>
