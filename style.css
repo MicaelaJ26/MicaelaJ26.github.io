@@ -295,8 +295,8 @@ section {
     gap: 20px;     
 }
 .portfolio .portfolio-item {
-    flex: 0 1 30%; /* Reduce el tamaño a 25% */
-    max-width: 30%; /* Máximo 25% del contenedor */
+    flex: 0 1 30%; 
+    max-width: 30%; 
     margin: 10px;
     position: relative;
     overflow: hidden;
@@ -365,6 +365,12 @@ section {
     background-color: rgb(60, 60, 60);
     transform: scale(1.1);
 }
+
+@media (min-width: 768px) {
+    .portfolio .portfolio-item:nth-child(odd) {
+        margin-right: 5%; 
+    }/* Asegurar que solo haya 2 imágenes por fila */
+}
 /* Navbar responsiva */
 @media (max-width: 768px) {
     .navbar {
@@ -412,26 +418,102 @@ section {
     }
 }
 
-/* Ajustes para el portafolio */
-@media (max-width: 1024px) {
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .icon-gallery {
+        max-width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .icon-card {
+        width: 120px;
+    }
+    .icon {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .icon-gallery {
+        max-width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .icon-card {
+        width: 120px;
+    }
+    .icon {
+        font-size: 5rem;
+    }
+}
+
+/* Media Query para Pantallas Medias */
+@media (max-width: 769px) {
+    body {
+        padding: 20px 0 0 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header {
+        height: 50vh;
+        min-height: 300px;
+    }
+
+    .header-subtitle,
+    .header-title,
+    .header-mono {
+        font-size: 1em;
+    }
+
+    #acerca-de-mi {
+        flex-direction: column;
+    }
+
+    .acerca-de-mi-imagen img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 90%;
+        max-width: none;
+    }
+
     .portfolio .portfolio-item {
-        flex: 0 1 45%;
-        max-width: 45%;
+        width: calc(100% - 30px);
+    }
+
+    .content-section {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    @media (min-width: 992px) {
+        .navbar-nav .nav-link {
+            margin-bottom: 0;
+        }
+    }
+    @media (min-width: 1024px) {
+        .icon-gallery {
+            max-width: 1000px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .icon-card {
+            width: 120px;
+        }
+        .icon {
+            font-size: 5rem;
+        }
     }
 }
-@media (max-width: 768px) {
-    .portfolio .portfolio-item {
-        flex: 0 1 90%;
-        max-width: 90%;
-    }
-}
-
-/* Botones más grandes en pantallas pequeñas */
-@media (max-width: 768px) {
-    .content-holder .btn {
-        font-size: 1rem;
-        padding: 12px 20px;
-    }
-}
-
-
