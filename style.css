@@ -1,3 +1,4 @@
+/* ==================== GLOBAL STYLES ==================== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: white;
     font-size: 1rem;
 }
+/* ==================== NAVBAR ==================== */
 .navbar {
     display: flex;
     gap: 50px;
@@ -24,26 +26,18 @@ body {
 .navbar-toggler-icon {
     filter: invert(1);
 }
-/* Espaciado entre enlaces cuando la barra colapsa */
 .navbar-nav .nav-link {
-    margin-bottom: 10px;
+    margin-bottom: 10px;/* Espaciado entre enlaces cuando la barra colapsa */
 }
+/* ==================== HEADER ==================== */
 .header {
     position: relative;
     height: 100vh;
     min-height: 600px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
     url(../img/pccodigo.jpg) center/cover no-repeat fixed;
-    /* background-size: 100% 100%;
-    background-attachment: scroll; */
 }
-/* @media (max-width: 768px) {
-    .header {
-        background-size: 100%; 
-        height: auto;
-        min-height: 100vh;
-    }
-} */
+
 .header-content {
     position: absolute;
     top: 55%;
@@ -69,28 +63,41 @@ body {
     font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
     margin-bottom: 40px;
 }
+
 section {
-    min-height: 80vh; /* Ajusta según sea necesario */
-    scroll-margin-top: 80px;
-    padding: 100px 0; /* Espaciado uniforme */
+    min-height: auto; /* Evita forzar una altura mínima */
+    padding: 70px 0 !important; /* Reduce el padding superior e inferior */
     margin: 0 auto;
 }
-#acerca-de-mi {
+
+/* Secciones Generales */
+.content-section {
+    padding: 30px 0 !important; /* Reduce el padding para que el espacio sea más uniforme */
+    margin: 30px 0 !important; /* Menos margen entre secciones */
+    min-width: 0; 
+}
+
+
+/* ==================== ABOUT ME ==================== */
+#aboutme  {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: center;
     background-color: black;
     color: white;
     padding: 80px 0;
-    margin: 0; /* Ajusta el padding superior e inferior según tus necesidades */
-    scroll-margin-top: 100px; 
+    margin: 0px; /* Ajusta el padding superior e inferior según tus necesidades */
+    scroll-margin-top: 120px !important; 
 }
-.acerca-de-mi-texto {
-    flex: 1;
-    margin-right: 20px; 
-    margin-top: 90px; 
-    margin-bottom: 90px; 
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1500px; /* Evita que la sección se expanda demasiado en pantallas grandes */
+    align-items: center;
+    justify-content: space-between;
 }
+
 #acerca-de-mi h2 {
     font-size: 2em;
     margin-top: 90px; /* Ajusta el margen superior del título */
@@ -102,23 +109,44 @@ section {
 }
 .acerca-de-mi-imagen {
     flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
 }
 .acerca-de-mi-imagen img {
-    margin-top: 90px;
-    margin-left: 25%;
-    width: 50%; 
+    /* margin-top: 40px; */
+    width: 80%;
+    max-width: 400px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
-    object-fit: cover; 
+    
 }
-#skills {
-    padding: 80px 0;
-    margin: 0; 
-  }
-/* Centrar el título */
-.skills-title {
+/* Texto */
+.card-acerca-de-mi-texto {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    max-width: 600px;
+}
+.card-header {
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+/* ==================== SKILLS ==================== */
+#skills {
+    padding: 0;
+    margin: 0;
+    scroll-margin-top: 20px; 
+  }
+.skills-title {
+    text-align: center;/* Centrar el título */
     font-size: 2em;
     margin-bottom: 40px;
     color: white;
@@ -139,7 +167,7 @@ section {
 /* Estilos de la grilla */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 4 columnas */
+    grid-template-columns: repeat(5, 1fr); 
     gap: 60px; /* Espacio entre los íconos */
     width: 100%;
     max-width: 900px; /* Ajusta el ancho */
@@ -216,13 +244,8 @@ section {
     font-size: 0.9rem;
     border-radius: 10px;
 }
-/* Secciones Generales */
- .content-section {
-    padding: 0;
-    margin: 80px 0 !important;
-    min-width: 0; 
-}
- /* Centrar la sección de contacto */
+
+ /* ==================== CONTACT ==================== */
 #contact {
     display: flex;
     justify-content: center;
@@ -230,15 +253,18 @@ section {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px; /* Aumenta el espacio inferior para "Skills" */
+    scroll-margin-top: 10px;
 }
 .card-contacto hr {
     width: 50%; /* Reduce el ancho de la línea */
     margin: 10px auto; /* Centra la línea */
     border-color: gray;
 }
+/* ==================== STUDIES ==================== */
 #studies {
     margin-top: 0px;
-    margin-bottom: 90px; /* Aumenta el espacio inferior para "Skills" */
+    margin-bottom: 0px; /* Aumenta el espacio inferior para "Skills" */
+    scroll-margin-top: 90px;
 }
 .education-languages {
     display: flex;
@@ -288,9 +314,12 @@ section {
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9em;
 }
+
+/* ==================== PROJECTS ==================== */
 #myprojects {
     margin-top: 0px;
-    margin-bottom: 90px; /* Aumenta el espacio inferior para "Skills" */
+    margin-bottom: 0px; /* Aumenta el espacio inferior para "Skills" */
+    scroll-margin-top: 5px;
 }
 .portfolio .portfolio-title {
     display: inline-block; 
@@ -381,6 +410,9 @@ section {
     background-color: rgb(60, 60, 60);
     transform: scale(1.1);
 }
+
+
+/* Asegurar que solo haya 2 imágenes por fila */
 @media (max-width: 1024px) {
     .portfolio .portfolio-item:nth-child(odd) {
         margin-right: 5%; 
@@ -389,23 +421,31 @@ section {
 @media (min-width: 768px) {
     .portfolio .portfolio-item:nth-child(odd) {
         margin-right: 5%; 
-    }/* Asegurar que solo haya 2 imágenes por fila */
+    }
 }
-/* Ajustes para la grilla de Skills */
+/* Responsive: En pantallas pequeñas, mostrar de a uno */
+@media (max-width: 768px) {
+    .portfolio .portfolio-item {
+        flex: 0 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+} 
+
+/* ✅ Media queries RESPONSIVE */
 @media (max-width: 1024px) {
-    .skills-grid {
+    #skills .skills-grid {
         grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 @media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 30px !important;
+    #skills .skills-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 20px !important;
     }
 }
 @media (max-width: 480px) {
-    .skills-grid {
-        grid-template-columns: repeat(1, 1fr) !important;
+    #skills .skills-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 /* Navbar responsiva */
@@ -420,122 +460,54 @@ section {
         padding: 10px;
     }
 }
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        margin-bottom: 0;
+    }
+}
 
-/* Sección "Acerca de mí" responsiva */
-@media (max-width: 768px) {
-    #acerca-de-mi {
+
+/* Aboutme */
+@media (max-width: 1024px) {
+    .row {
         flex-direction: column;
         text-align: center;
-        padding: 50px 20px;
     }
-    .acerca-de-mi-texto {
-        margin: 20px 0;
+    
+    .acerca-de-mi-imagen img {
+        width: 60%;
+        max-width: 350px;
     }
+
+    .card-acerca-de-mi-texto {
+        max-width: 90%;
+    }
+}
+@media (max-width: 767px) {
+    #aboutme {
+        padding: 40px 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
     .acerca-de-mi-imagen img {
         width: 80%;
-        margin-left: 0;
-    }
-}
-
-
-
-
-@media (min-width: 992px) {
-    .navbar-nav .nav-link {
-        margin-bottom: 0;
-    }
-}
-@media (min-width: 1024px) {
-    .icon-gallery {
-        max-width: 1000px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .icon-card {
-        width: 120px;
-    }
-    .icon {
-        font-size: 5rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar-nav .nav-link {
-        margin-bottom: 0;
-    }
-}
-@media (min-width: 1024px) {
-    .icon-gallery {
-        max-width: 1000px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .icon-card {
-        width: 120px;
-    }
-    .icon {
-        font-size: 5rem;
-    }
-}
-
-/* Media Query para Pantallas Medias */
-@media (max-width: 769px) {
-    body {
-        padding: 20px 0 0 0;
+        max-width: 300px;
     }
 
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
+    .card-acerca-de-mi-texto {
+        padding: 10px;
+        text-align: left;
     }
 
-    .header {
-        height: 50vh;
-        min-height: 300px;
-    }
-
-    .header-subtitle,
-    .header-title,
-    .header-mono {
+    .card-body p {
         font-size: 1em;
     }
-
-    #acerca-de-mi {
-        flex-direction: column;
-    }
-
-    .acerca-de-mi-imagen img {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .card {
-        margin: 0 auto;
-        width: 90%;
-        max-width: none;
-    }
-
-    .portfolio .portfolio-item {
-        width: calc(100% - 30px);
-    }
-
-    .content-section {
-        flex: 0 0 100%;
-        margin-bottom: 20px;
-    }
-    @media (min-width: 992px) {
-        .navbar-nav .nav-link {
-            margin-bottom: 0;
-        }
-    }
-    @media (min-width: 1024px) {
-        .icon-gallery {
-            max-width: 1000px;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .icon-card {
-            width: 120px;
-        }
-        .icon {
-            font-size: 5rem;
-        }
-    }
 }
+
+
+
+
+
