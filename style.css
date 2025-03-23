@@ -27,7 +27,7 @@ body {
     filter: invert(1);
 }
 .navbar-nav .nav-link {
-    margin-bottom: 10px;/* Espaciado entre enlaces cuando la barra colapsa */
+    margin-bottom: 10px;
 }
 /* ==================== HEADER ==================== */
 .header {
@@ -65,18 +65,17 @@ body {
 }
 
 section {
-    min-height: auto; /* Evita forzar una altura mínima */
-    padding: 70px 0 !important; /* Reduce el padding superior e inferior */
+    min-height: auto; 
+    padding: 70px 0 !important; 
     margin: 0 auto;
 }
 
 /* Secciones Generales */
 .content-section {
-    padding: 30px 0 !important; /* Reduce el padding para que el espacio sea más uniforme */
-    margin: 30px 0 !important; /* Menos margen entre secciones */
+    padding: 30px 0 !important; 
+    margin: 30px 0 !important; 
     min-width: 0; 
 }
-
 
 /* ==================== ABOUT ME ==================== */
 #aboutme  {
@@ -86,22 +85,22 @@ section {
     background-color: black;
     color: white;
     padding: 80px 0;
-    margin: 0px; /* Ajusta el padding superior e inferior según tus necesidades */
+    margin: 0px; 
     scroll-margin-top: 120px !important; 
 }
 .row {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 1500px; /* Evita que la sección se expanda demasiado en pantallas grandes */
+    max-width: 1500px; 
     align-items: center;
     justify-content: space-between;
 }
 
 #acerca-de-mi h2 {
     font-size: 2em;
-    margin-top: 90px; /* Ajusta el margen superior del título */
-    margin-bottom: 40px; /* Ajusta el margen inferior del título */
+    margin-top: 90px; 
+    margin-bottom: 40px; 
 }
 #acerca-de-mi p {
     font-size: 1.2em;
@@ -146,7 +145,7 @@ section {
     scroll-margin-top: 20px; 
   }
 .skills-title {
-    text-align: center;/* Centrar el título */
+    text-align: center;
     font-size: 2em;
     margin-bottom: 40px;
     color: white;
@@ -155,7 +154,7 @@ section {
     border-radius: 8px 8px 0 0;
     padding: 10px 15px;      
 }
-/* Contenedor principal */
+
 .skills-container {
     display: flex;
     flex-direction: column;
@@ -164,13 +163,13 @@ section {
     width: 100%;
     padding: 10px 0;    
 }
-/* Estilos de la grilla */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
-    gap: 60px; /* Espacio entre los íconos */
+    gap: 60px; 
     width: 100%;
-    max-width: 900px; /* Ajusta el ancho */
+    max-width: 900px; 
     justify-content: center;
 }
 .icon {
@@ -196,7 +195,7 @@ section {
     font-size: 1rem;
 }
 .icon-card img {
-    width: 90px; /* Ajusta según sea necesario */
+    width: 90px; 
     height: auto;
     transition: transform 0.3s;
 }
@@ -234,8 +233,8 @@ section {
     background-color: #e9ecef;
     border-radius: 10px;
     overflow: hidden;
-    max-width: 60%; /* Reducir ancho */
-    margin: 0 auto; /* Centrar */
+    max-width: 60%; 
+    margin: 0 auto; 
 }
 .progress-bar {
     height: 100%;
@@ -252,27 +251,27 @@ section {
     align-items: center;
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 0px; /* Aumenta el espacio inferior para "Skills" */
+    margin-bottom: 0px; 
     scroll-margin-top: 10px;
 }
 .card-contacto hr {
-    width: 50%; /* Reduce el ancho de la línea */
-    margin: 10px auto; /* Centra la línea */
+    width: 50%; 
+    margin: 10px auto; 
     border-color: gray;
 }
 /* ==================== STUDIES ==================== */
 #studies {
     margin-top: 0px;
-    margin-bottom: 0px; /* Aumenta el espacio inferior para "Skills" */
+    margin-bottom: 0px; 
     scroll-margin-top: 90px;
 }
 .education-languages {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px; /* Aumenta un poco el espacio entre columnas */
-    margin: 0 auto; /* Centra la sección */
-    max-width: 90%; /* Evita que se expanda demasiado en pantallas grandes */
+    gap: 40px; 
+    margin: 0 auto; 
+    max-width: 90%; 
     flex-wrap: wrap;
 }
 .education-languages .column {
@@ -281,14 +280,14 @@ section {
     text-align: center;
     min-width: 350px;
 }
-/* Ajustar el ancho de las líneas dentro de las tarjetas */
+
 .card-body .col-10 {
-    max-width: 90%; /* Limitar el ancho máximo del contenido */
-    margin: 0 auto; /* Centrar el texto */
+    max-width: 90%; 
+    margin: 0 auto; 
 }
 .card-body hr {
-    width: 80%; /* Reduce el ancho de la línea */
-    margin: 15px auto; /* Centra la línea */
+    width: 80%; 
+    margin: 15px auto; 
     border-color: gray;
 }
 /* Títulos */
@@ -301,7 +300,7 @@ section {
 .card-header {
     background-color: black;
     border-bottom: 2px solid gray;
-    max-width: 80%; /* Limitar el largo */
+    max-width: 80%; 
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -318,7 +317,7 @@ section {
 /* ==================== PROJECTS ==================== */
 #myprojects {
     margin-top: 0px;
-    margin-bottom: 0px; /* Aumenta el espacio inferior para "Skills" */
+    margin-bottom: 0px; 
     scroll-margin-top: 5px;
 }
 .portfolio .portfolio-title {
@@ -355,9 +354,9 @@ section {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); 
 }
 .portfolio .portfolio-item:hover {
-    transform: scale(1.05); /* Agrandar suavemente */
+    transform: scale(1.05); 
     box-shadow: 0 15px 25px rgba(225, 216, 216, 0.4); 
-    background-color: rgba(255, 255, 255, 0.2); /* Cambio de color suave */  
+    background-color: rgba(255, 255, 255, 0.2); 
 }
  .portfolio .portfolio-item:hover .content-holder {
     opacity: 1;
@@ -411,8 +410,114 @@ section {
     transform: scale(1.1);
 }
 
+/* ==================== VIEW MORE BUTTON ==================== */
+.view-more-btn {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
 
-/* Asegurar que solo haya 2 imágenes por fila */
+.view-more-btn:hover {
+    background-color:  rgb(60, 60, 60);
+    transform: scale(1.1);
+}
+
+/* ==================== MODAL STYLES ==================== */
+.modal-images-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    gap: 10px;  
+    flex-wrap: wrap;  
+}
+
+.modal-body img {
+    width: 20%;  
+    max-width: 20px;  
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+.modal-dialog {
+    max-width: 800px; 
+}
+.modal-content {
+    background-color: black; 
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.modal-header {
+    border-bottom: 2px solid gray;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.modal-body {
+    text-align: left;
+    padding: 20px;
+    font-size: 1rem;
+}
+.modal-body p strong {
+    display: block; 
+    margin-bottom: 10px; 
+    font-size: 1.2rem; 
+}
+.modal-body p, .modal-body ul {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-bottom: 15px;
+}
+.modal-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.modal-body ul li {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.modal-body img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.modal-footer {
+    border-top: 2px solid gray;
+    text-align: center;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+    .modal-body img {
+        max-width: 90%;
+    }
+    .modal-body img {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 1024px) {
     .portfolio .portfolio-item:nth-child(odd) {
         margin-right: 5%; 
@@ -423,7 +528,7 @@ section {
         margin-right: 5%; 
     }
 }
-/* Responsive: En pantallas pequeñas, mostrar de a uno */
+
 @media (max-width: 768px) {
     .portfolio .portfolio-item {
         flex: 0 1 calc(100% - 20px);
@@ -431,7 +536,7 @@ section {
     }
 } 
 
-/* ✅ Media queries RESPONSIVE */
+
 @media (max-width: 1024px) {
     #skills .skills-grid {
         grid-template-columns: repeat(3, 1fr) !important;
@@ -448,7 +553,7 @@ section {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 }
-/* Navbar responsiva */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -466,8 +571,6 @@ section {
     }
 }
 
-
-/* Aboutme */
 @media (max-width: 1024px) {
     .row {
         flex-direction: column;

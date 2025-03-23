@@ -23,11 +23,11 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" href="#" onclick="showSection('home')"> Home </a>
-              <a class="nav-link" href="#aboutme" onclick="showSection('acerca-de-mi')"> About me </a>
-              <a class="nav-link" href="#skills" onclick="showSection('Sofware Skills')"> Skills </a>
-              <a class="nav-link" href="#studies" onclick="showSection('estudios')"> Studies </a>
-              <a class="nav-link" href="#myprojects" onclick="showSection('misproyectos')"> My Projects </a>
-              <a class="nav-link" href="#contact" onclick="showSection('contacto')"> Contact </a>
+              <a class="nav-link" href="#aboutme" onclick="showSection('aboutme')"> About me </a>
+              <a class="nav-link" href="#skills" onclick="showSection('SkillsSoftware')"> Skills </a>
+              <a class="nav-link" href="#studies" onclick="showSection('studies')"> Studies </a>
+              <a class="nav-link" href="#myprojects" onclick="showSection('MyProjects')"> My Projects </a>
+              <a class="nav-link" href="#contact" onclick="showSection('Contact')"> Contact </a>
             </div>
           </div>
         </div>
@@ -52,9 +52,9 @@
                     <h2>About Me</h2>
                 </div>
                 <div class="card-body">
-                    <p>I am a Full Stack Developer. I create websites and mobile apps that are easy to use. Before, I worked in the legal field for over 8 years, where I learned project management, problem-solving, and teamwork.</p>
-                    <p>Now, I have skills in HTML, CSS, JavaScript, TypeScript, Java, Python, and frameworks like Angular, Django, Node.js, React Native, and MySQL. I have a Full Stack Development certification and a degree in Web and Digital Applications Development.</p>
-                    <p>I am hardworking, always learning, and focused on the future. I want to grow in my career and help teams with creative and smart solutions.</p>
+                    <p>I am a Full Stack Developer who creates user-friendly websites and mobile apps. Previously, I worked in the legal field for over eight years, gaining valuable experience in project management, problem-solving, and teamwork.</p>
+                    <p>Now, I have strong skills in HTML, CSS, JavaScript, TypeScript, Java, and Python, along with frameworks such as Angular, Django, Node.js, React Native, and MySQL. I hold a Full Stack Development certification and a degree in Web and Digital Applications Development.</p>
+                    <p>I am a dedicated professional, eager to learn, and driven by innovation. My goal is to grow in my career and contribute to teams by providing creative and smart solutions. From law to code, I transformed my passion for problem-solving into software development. I strive to create technology that simplifies lives and empowers businesses.</p>
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
 
 <section class="section bg-custom-gray content-section spacing" id="skills">
     <div class="skills-container">        
-        <h2 class="skills-title">Skills Software</h2>    
+        <h2 class="skills-title">Software Skills</h2>    
         <div class="skills-grid">
             <div class="icon-card"><i class="devicon-html5-plain icon custom-white"></i><p>HTML5</p></div>
             <div class="icon-card"><i class="devicon-css3-plain icon custom-white"></i><p>CSS3</p></div>
@@ -87,8 +87,6 @@
         </div>
     </div>
 </section>
-
-
 
 <div class="education-languages container spacing">   
     <section id="studies" class="content-section column">
@@ -146,7 +144,7 @@
     <div class="portfolio">
         <div class="card-portfolio text-center">
         <div class="mt-2">
-            <h4 class="portfolio-title">My Proyects</h4>
+            <h4 class="portfolio-title">My Projects</h4>
         </div>
     </div>
          <div class="portfolio-container">
@@ -156,45 +154,227 @@
                     <div class="text-holder">
                         <h6 class="title">Interactive Quiz</h6>
                         <p class="subtitle">Development of a quiz with dynamic navigation, state management, and a scoring system. It includes a timer and conditional logic to improve the user experience.</p>
-                        <!-- <a href="url-demo" class="btn demo-btn">View Demo</a> -->
+                        <a href="#" class="btn view-more-btn" data-bs-toggle="modal" data-bs-target="#quizModal">View More</a>
                         <a href="https://github.com/MicaelaJ26/-QuizWordApp-" class="btn github-btn">Explore on GitHub</a>
                     </div>
                 </div>
             </div>  
+
+      
+<div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="quizModalLabel">QuizWordApp - Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">                 
+                <p><strong>About the project:</strong></p>
+                <p>QuizWordApp is an interactive quiz application built with React Native. It allows users to answer multiple-choice questions, calculates a score based on difficulty, and provides a detailed summary at the end.</p>
+
+                <p><strong>Technical Challenges:</strong></p>
+                <ul>
+                    <li>⚡ Optimizing API calls for real-time question loading.</li>
+                    <li>⚡ Implementing a dynamic scoring system based on question difficulty.</li>
+                    <li>⚡ Ensuring smooth navigation and UI performance.</li>
+                </ul>
+
+                <p><strong>🛠 Technologies Used:</strong></p>
+                <ul>
+                    <li>React Native (0.73.6) – Cross-platform development.</li>
+                    <li>Axios – API requests to Open Trivia Database.</li>
+                    <li>React Navigation – Screen transitions.</li>
+                    <li>Expo Linear Gradient – UI styling.</li>
+                </ul>
+
+                <p><strong>Key Learnings:</strong></p>
+                <ul>
+                    <li>🚀 Improved API integration and state management.</li>
+                    <li>🚀 Optimized performance in React Native applications.</li>
+                    <li>🚀 Better understanding of real-time data handling.</li>
+                </ul>
+
+                <p>🔗 <a href="https://github.com/MicaelaJ26/-QuizWordApp-" target="_blank">See project on GitHub</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
             <div class="portfolio-item">
                 <img src="./img/riccoappnegro.png" class="img-fluid" alt="Example 1">
                 <div class="content-holder">
                     <div class="text-holder">
                         <h6 class="title">RiccoApp - Mobile Application</h6>
                         <p>Mobile app for a burger chain that improves customer experience. It allows users to explore the menu and manage accounts easily. Ordering feature coming soon.</p>
-                        <!-- <a href="url-demo" class="btn demo-btn">View Demo</a> -->
+                        <a href="#" class="btn view-more-btn" data-bs-toggle="modal" data-bs-target="#riccoModal">View More</a>
                         <a href="https://github.com/G10-ISPC/Frontend-Mobile" class="btn github-btn">Explore on GitHub</a>
                     </div>
                 </div>
-            </div>                
+            </div>   
+<div class="modal fade" id="riccoModal" tabindex="-1" aria-labelledby="riccoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="riccoModalLabel">RiccoApp - Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+                <p><strong>About the project:</strong></p>
+                <p>RiccoApp is a mobile e-commerce application developed for a burger restaurant. The app allows users to browse the menu, explore different sections, and manage their accounts. The ordering feature will be available in future updates.</p>
+
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>🔹 User registration and login system.</li>
+                    <li>🔹 Account management (edit personal details, delete account).</li>
+                    <li>🔹 Interactive menu navigation.</li>
+                </ul>
+
+                <p><strong>🛠 Technologies Used:</strong></p>
+                <ul>
+                    <li>Java – Android app development.</li>
+                    <li>Django – Backend and API development.</li>
+                    <li>Android Studio – Integrated development environment (IDE).</li>
+                    <li>MySQL – Database management.</li>
+                    <li>Retrofit – API communication and data fetching.</li>
+                    <li>API REST – Communication between frontend and backend.</li>
+                </ul>
+
+                <p><strong>Key Learnings:</strong></p>
+                <ul>
+                    <li>🚀 Improved Java development skills for Android applications.</li>
+                    <li>🚀 Better understanding of Django for backend services.</li>
+                    <li>🚀 Optimized API integration using Retrofit.</li>
+                    <li>🚀 Enhanced UI/UX design and navigation for mobile apps.</li>
+                </ul>
+
+                <p>🔗 <a href="https://github.com/G10-ISPC/Frontend-Mobile" target="_blank">See project on GitHub</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
             <div class="portfolio-item">
                 <img src="./img/RicettarioXweb.png" class="img-fluid" alt="Example 3">
                 <div class="content-holder">
                     <div class="text-holder">
                         <h6 class="title"> RicettarioX </h6>
                         <p class="subtitle">RicettarioX is a web app that lets users manage their recipes. You can create, edit, delete, and view recipes shared by others. It also features an AI tool that generates recipes based on your available ingredients.</p>
-                        <!-- <a href="..." class="btn demo-btn">View Demo</a> -->
+                        <a href="#" class="btn view-more-btn" data-bs-toggle="modal" data-bs-target="#ricettarioModal">View More</a>
                         <a href="https://github.com/MicaelaJ26/RicettarioX" class="btn github-btn">Explore on GitHub</a>
                     </div>
                 </div>
             </div> 
+<div class="modal fade" id="ricettarioModal" tabindex="-1" aria-labelledby="ricettarioModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ricettarioModalLabel">RicettarioX - Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <p><strong>About the project:</strong></p>
+                <p>RicettarioX is a web application that allows users to manage their recipes. Users can create, edit, and delete personal recipes, as well as view public recipes shared by others.</p>
+                <p>It also features an AI-powered tool that generates custom recipes based on ingredients provided by the user.</p>
+
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>🔹 User registration and secure login.</li>
+                    <li>🔹 Create, edit, and delete personal recipes.</li>
+                    <li>🔹 View and explore public recipes shared by other users.</li>
+                    <li>🔹 AI-powered recipe generation with Spoonacular API.</li>
+                    <li>🔹 Secure authentication system using JWT.</li>
+                    <li>🔹 Responsive and intuitive user interface.</li>
+                </ul>
+
+                <p><strong>🛠 Technologies Used:</strong></p>
+                <ul>
+                    <li>Frontend: Angular, TypeScript, Bootstrap.</li>
+                    <li>Backend: Django Rest Framework (DRF), Python.</li>
+                    <li>Authentication: JSON Web Token (JWT).</li>
+                    <li>Database: MySQL.</li>
+                    <li>API: REST API.</li>
+                    <li>AI Integration: Spoonacular API for automatic recipe generation.</li>
+                </ul>
+
+                <p><strong>Key Learnings:</strong></p>
+                <ul>
+                    <li>🚀 Improved full-stack development skills using Angular and Django.</li>
+                    <li>🚀 Gained experience integrating AI APIs for content generation.</li>
+                    <li>🚀 Strengthened authentication and database management knowledge.</li>
+                    <li>🚀 Optimized UI/UX for better user experience.</li>
+                </ul>
+
+                <p>🔗 <a href="https://github.com/MicaelaJ26/RicettarioX" target="_blank">See project on GitHub</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
             <div class="portfolio-item">
                 <img src="./img/riccoweb.png" class="img-fluid" alt="Example 3">
                 <div class="content-holder">
                     <div class="text-holder">
                         <h6 class="title">Ricco Burgers - Online Store</h6>
                         <p class="subtitle">Development of an online store for a fast-food chain, improving user experience and security.</p>
-                        <!-- <a href="url-demo" class="btn demo-btn">View Demo</a> -->
+                        <a href="#" class="btn view-more-btn" data-bs-toggle="modal" data-bs-target="#riccoModal1">View More</a>
                         <a href="https://github.com/G10-ISPC/RICCO-2024" class="btn github-btn">Explore on GitHub</a>
                     </div>
                 </div>
             </div> 
-                         
+
+<div class="modal fade" id="riccoModal1" tabindex="-1" aria-labelledby="riccoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="riccoModalLabel">Ricco Burgers - Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               
+                <p><strong>About the project:</strong></p>
+                <p>Ricco Burgers is an e-commerce web application designed for a fast-food restaurant. Customers can browse the menu, add burgers to the cart, and complete their purchase online. Sellers can upload product details, manage inventory, and process orders.</p>
+
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>🔹 Customers can browse and filter available burgers.</li>
+                    <li>🔹 Shopping cart for adding and managing orders.</li>
+                    <li>🔹 Online payment system (to be implemented).</li>
+                    <li>🔹 Sellers can add, edit, and delete product listings.</li>
+                    <li>🔹 Inventory management for stock control.</li>
+                    <li>🔹 Order processing and tracking system.</li>
+                </ul>
+
+                <p><strong>🛠 Technologies Used:</strong></p>
+                <ul>
+                    <li>Frontend: HTML, CSS, Bootstrap, JavaScript.</li>
+                    <li>Backend: Python.</li>
+                    <li>Database: MySQL.</li>
+                </ul>
+
+                <p><strong>Key Learnings:</strong></p>
+                <ul>
+                    <li>🚀 Strengthened frontend development skills with Bootstrap and JavaScript.</li>
+                    <li>🚀 Gained experience in backend logic using Python.</li>
+                    <li>🚀 Improved understanding of inventory and order management systems.</li>
+                    <li>🚀 Optimized UX/UI for a smooth customer shopping experience.</li>
+                </ul>
+
+                <p>🔗 <a href="https://github.com/G10-ISPC/RICCO-2024" target="_blank">See project on GitHub</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 </section>
