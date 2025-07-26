@@ -1,0 +1,39 @@
+ /* ==================== CONTACT ==================== */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    scroll-margin-top: 10px;    
+}
+.card-contacto h4 {
+    font-size: 2rem;
+}
+     
+.card-contacto hr {
+    width: 50%; 
+    margin: 10px auto; 
+    border-color: gray;
+}
+.card-contacto .card-body > div {
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.card-contacto hr {
+    width: 80%;           
+    margin: 10px auto;     
+    border: 2px solid gray;
+}
+
+.card-contacto .card-body {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+

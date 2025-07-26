@@ -1,0 +1,55 @@
+
+/* ==================== STUDIES ==================== */
+#studies {
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    scroll-margin-top: 90px;
+}
+.education-languages {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; 
+    margin: 0 auto; 
+    max-width: 90%; 
+    flex-wrap: wrap;
+}
+.education-languages .column {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+    min-width: 350px;
+}
+
+.card-body .col-10 {
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+.card-body hr {
+    width: 80%; 
+    margin: 15px auto; 
+    border-color: gray;
+}
+/* Títulos */
+.card-header h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f8f9fa;
+    font-size: 2em;
+}
+.card-header {
+    background-color: black;
+    border-bottom: 2px solid gray;
+    max-width: 80%; 
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.text-large {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+.text-muted {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+}

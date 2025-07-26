@@ -1,0 +1,194 @@
+@import url('sections/_about.css');
+@import url('sections/_skills.css');
+@import url('sections/_projects.css');
+@import url('sections/_contact.css');
+@import url('sections/_studies.css');
+@import url('sections/_modal.css');
+
+
+/* ==================== GLOBAL STYLES ==================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 56px 0 0 0;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+    display: flex;
+    gap: 50px;
+    background-color: black;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-link {
+    padding: 0 20px;
+    margin-right: 20px;
+    color: white !important;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+.navbar-nav .nav-link {
+    margin-bottom: 10px;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+    position: relative;
+    height: 70vh;
+    min-height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url(../img/pccodigo.jpg) center/cover no-repeat fixed;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+.header-subtitle {
+    font-weight: 200;
+    font-size: 2rem;     
+    margin-bottom: 5px;
+}
+.header-title {
+    font-size: 6rem;        
+    font-weight: bold;
+    line-height: 1;          
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+.header-mono {
+    letter-spacing: 3px;      
+    font-weight: 500;
+    font-size: 1.5rem;        
+    margin-bottom: 0;  
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+.fade-in-up.delay-1 {
+  animation-delay: 0.4s;
+}
+.fade-in-up.delay-2 {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Secciones Generales */
+section {
+    min-height: auto; 
+    padding: 70px 0 !important; 
+    margin: 0 auto;
+}
+.content-section {
+    padding: 30px 0 !important; 
+    margin: 30px 0 !important; 
+    min-width: 0; 
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+    .modal-body img {
+        max-width: 90%;
+    }
+    .modal-body img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .portfolio .portfolio-item:nth-child(odd) {
+        margin-right: 5%; 
+    }
+}
+@media (min-width: 768px) {
+    .portfolio .portfolio-item:nth-child(odd) {
+        margin-right: 5%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio .portfolio-item {
+        flex: 0 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+} 
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-link {
+        margin-right: 0;
+        padding: 10px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .acerca-de-mi-imagen img {
+        width: 60%;
+        max-width: 350px;
+    }
+
+    .card-acerca-de-mi-texto {
+        max-width: 90%;
+    }
+}
+@media (max-width: 767px) {
+    #aboutme {
+        padding: 40px 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .acerca-de-mi-imagen img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .card-acerca-de-mi-texto {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .card-body p {
+        font-size: 1em;
+    }
+}
+

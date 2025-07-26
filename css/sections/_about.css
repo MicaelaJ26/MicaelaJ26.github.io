@@ -1,0 +1,86 @@
+#aboutme  {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 80px 0;
+    margin: 0px; 
+    scroll-margin-top: 120px !important; 
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1500px; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+#acerca-de-mi p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+.acerca-de-mi-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+.acerca-de-mi-imagen img {    
+    width: 80%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+    
+}
+.card-acerca-de-mi-texto {
+    flex: 1;
+    padding: 10px 20px;
+    text-align: justify;
+    max-width: 650px;
+}
+.card-header h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.card-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-acerca-de-mi-texto, .acerca-de-mi-imagen {
+    animation: fadeInUp 1.2s ease both;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
