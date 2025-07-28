@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
+    padding: 50px 0;
+    min-height: auto;
     margin-top: 0px;
     margin-bottom: 0px; 
     scroll-margin-top: 10px;    
